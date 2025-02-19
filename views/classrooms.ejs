@@ -1,0 +1,8 @@
+<%- include('layouts/header') %>
+<h2>My Classrooms</h2>
+<ul>
+    <% classrooms.forEach(classroom => { %>
+        <li><%= classroom.name %> - <%= classroom.description %></li>
+    <% }) %>
+</ul>
+<%- include('layouts/footer') %>
